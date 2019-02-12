@@ -1,0 +1,55 @@
+page-home {
+    .multimedia{
+    background: #000;
+    color:#fff; 
+    }
+    .multimedia-home {
+        background:darkblue;
+        color: white;
+
+    }
+    .waveclass {
+        
+        opacity: 0.3; //maxที่ 1
+        position: absolute;
+        background: #6285c6;
+        width: 800px;
+        height: 800px;
+        border-radius: 33%;
+        transform-origin: 50% 48%;
+        animation: drift 8000ms infinite linear; //เรียกใช้ animation
+        bottom: -750px;
+        left: -80px;
+       
+    }
+
+    .waveclass.wave1{
+       
+    animation: drift 7000ms infinite linear; //เรียกใช้ animation
+    }
+    .waveclass.wave2{
+        
+    animation: drift 6000ms infinite linear; //เรียกใช้ animation
+    }
+
+    .menu-home{
+        position: absolute;
+        background: #ff3e62;
+        width: 200px;
+        height: 200px;
+    }
+    .menu-close{
+        
+        position: absolute;
+        width: 200px;
+        height: 200px;
+    }
+@keyframes drift {
+    from{transform: rotate(0deg);}
+    from{transform: rotate(360deg);}
+    
+}
+
+    
+
+}
